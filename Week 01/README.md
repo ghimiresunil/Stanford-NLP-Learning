@@ -89,6 +89,20 @@ Now let's appy `Bag of Words`
 
 Finally we have derived vectors using bag of words.😊 While bag of words is a useful technique for text analysis, it also has its disadvantages.  One of the main disadvantages is that it doesn't take into account the context in which words appear. As a result, words with multiple meanings can be assigned the same vector representation, leading to ambiguity in the analysis. Additionally, bag of words doesn't capture the relationship between words, such as synonyms and antonyms, which can affect the accuracy of natural language processing tasks.
 
+<b> Listed drawback of using a bag of words </b>
+
+- If the new sentences contain new words, then our vocabulary size would increase and thereby, the length of vector would increase too.
+- Additionally, the vectors would also contain many 0s, thereby resulting in a sparse matrix (which is what we would like to avoid)
+- We are retaining no information on the grammar of the sentences nor the ordering of the words in the text.
+
 From the above-generated vectors, it can be observed that the values assigned to the vectors are either 1 or 0. However, an important point to note is that both "intelligent" and "boy" have been assigned a value of 1, despite having different semantic meanings. This makes it difficult to determine which word holds greater importance. In sentiment analysis, it is crucial to identify the words that carry more weightage in determining the sentiment.
 
 To overcome some of the limitations of the bag-of-words model we have something call as `TF-IDF` which is also called `Term Frequency and inverse document frequency` 😊 
+
+Term Frequency - Inverse Document Frequency (TF-IDF) is a numerical statistics that is intended to reflect how important a word is to a document in a collection or corpus. 
+
+Term Frequency (TF) - If is a measure of how frequently a term, t appears in a document d. 
+
+$$t_{f_{t_i}d} = \frac{n_{t_id}}{Number\ of\ terms\ in\ the\ document}$$
+
+Here, in the numerator, n is the number of times the term 't' appears in the document 'd'. Thus, each document and term would have its own TF value.
