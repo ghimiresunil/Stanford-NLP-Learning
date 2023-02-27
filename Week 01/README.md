@@ -130,3 +130,15 @@ We can calculate the term frequencies for all terms and all the sentence in the 
 
 | Term | Sentence 1 | Sentence 2 | Sentence 3 | TF Sentence 1 | TF Sentence 2 | TF Sentence 3|
 | ---- | ---| ------- | -------  |-------  | -------  | ------- |
+| This | 1 | 1 | 1 | $frac{1}{7} | $frac{1}{8} | $frac{1}{6} |
+| movie | 1 | 1 | 1 | $frac{1}{7} | $frac{1}{8} | $frac{1}{6} |
+| is | 1 | 2 | 1 | $frac{1}{7} | $frac{1}{4} | $frac{1}{6} |
+| very | 1 | 0 | 0 | $frac{1}{7} | 0 | 0 |
+| scary | 1 | 1 | 0 | $frac{1}{7} | $frac{1}{8} 0 |
+| and | 1 | 1 | 1 | $frac{1}{7} | $frac{1}{8} | $frac{1}{6} |
+| long | 1 | 0 | 0 | $frac{1}{7} | 0 | 0 |
+| not | 0 | 1 | 0 | 0 | $frac{1}{8} | 0|
+| slow | 0 | 1 | 0 | 0 | $frac{1}{8} | 0|
+| spooky | 0 | 0 | 1 | 0 | 0 | \frac{1}{6}|
+| good | 0 | 0 | 1 | 0 | 0 | \frac{1}{6}|
+
