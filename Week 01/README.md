@@ -169,6 +169,22 @@ The IDF Values for the entire vocabulary would be:
 | good | 0 | 0 | 1 | $log\frac{3}{1}$ = 0.48|
 
 
-Hence, we can see that words like `is`, `the`, `and`, etc. are reduced to 0 and have little importance while words like `scary`, `long`, `good`, etc. are the words with more importance and thus have higher value. 
+We can observe that certain words such as "is", "the", and "and" have been assigned a value of 0, indicating their lower significance. In contrast, words such as "scary", "long", and "good" have a higher value, indicating their importance. By calculating the TF-IDF score for each word in the corpus, we can determine their respective importance levels.
 
-We can now compute the `TF-IDF` score of each word in corpus.
+$TF-IDF_{t,d}$ = $TF_{t,d}$  * $IDF_t$
+
+| Term | Sentence 1 | Sentence 2 | Sentence 3 | IDF | TF-IDF Sentence 01 | TF-IDF Sentence 02 | TF-IDF Sentence 03 | 
+| ------ | ------ | -------- | ------ | ------ | ------ | ------ | ------ | 
+| This | 1 | 1 | 1 |  0 | 0 | 0 | 0 |
+| movie | 1 | 1 | 1 |  0 | 0 | 0 | 0 |
+| is | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 
+| very | 1 | 0 | 0 | 0.48 | 0.068 | 0 | 0 | 
+| scary | 1 | 1 | 0 | 0.18 | 0.025 | 0.022 | 0 |
+| and | 1 | 1 | 1 | 0| 0 | 0 | 0 |
+| long | 1 | 0 | 0 | 0.48| 0.068 | 0 | 0 
+| not | 0 | 1 | 0 | 0.48| 0 | 0.060 | 0 |
+| slow | 0 | 1 | 0 | 0.48| 0 | 0.060 | 0 |
+| spooky | 0 | 0 | 1 | 0.48| 0 | 0 | 0.080|
+| good | 0 | 0 | 1 | 0.48| 0 | 0 | 0.80 | 
+
+After calculating the TF-IDF scores for our vocabulary, it became evident that less frequent words were given higher values, indicating their relative importance in the corpus. TF-IDF scores were found to be particularly high for words that were rare in all documents combined, but frequent in a single document, indicating their potential significance in that particular context.
