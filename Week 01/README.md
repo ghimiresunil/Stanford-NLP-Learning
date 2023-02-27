@@ -155,7 +155,7 @@ IDF `this` in sentence 2 = $log\frac{Number\ of\ documents}{Number\ of\ document
 The IDF Values for the entire vocabulary would be:
 
 | Term | Sentence 1 | Sentence 2 | Sentence 3 | IDF |
-| ------ | ------ | -------- | ------ |
+| ------ | ------ | -------- | ------ | ------ |
 | This | 1 | 1 | 1 | $log\frac{3}{3}$ = 0 | 
 | movie | 1 | 1 | 1 | $log\frac{3}{3}$ = 0 |
 | is | 1 | 2 | 1 | $log\frac{3}{3}$, $log\frac{3}{3}$  = 0 |
