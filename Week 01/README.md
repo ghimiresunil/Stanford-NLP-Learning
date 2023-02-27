@@ -142,3 +142,12 @@ We can calculate the term frequencies for all terms and all the sentence in the 
 | spooky | 0 | 0 | 1 | 0 | 0 | $\frac{1}{6}$|
 | good | 0 | 0 | 1 | 0 | 0 | $\frac{1}{6}$|
 
+Inverse Document Frequency (IDF): IDF is the measure of how important a term is. We need the IDF value because TF alone is not sufficient to understand the importance of words.
+
+$idf_i$ = $log\frac{Number\ of\ Documents}{Number\ of\ documents\ with\ term\ 't'}$
+
+Example:
+
+Let's calculate the IDF value of word `this` in sentence 2.
+
+IDF `this` in sentence 2 = $log\frac{Number\ of\ documents}{Number\ of\ documents\ containing\ the\ word\ `this`} $ = $log\frac{3}{3}$ = log(1) = 0
