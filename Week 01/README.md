@@ -151,3 +151,19 @@ Example:
 Let's calculate the IDF value of word `this` in sentence 2.
 
 IDF `this` in sentence 2 = $log\frac{Number\ of\ documents}{Number\ of\ documents\ containing\ the\ word\ this}$ = $log\frac{3}{3}$ = log(1) = 0
+
+The IDF Values for the entire vocabulary would be:
+
+| Term | Sentence 1 | Sentence 2 | Sentence 3 | IDF |
+| ------ | ------ | -------- | ------ |
+| This | 1 | 1 | 1 | $log\frac{3}{3}$ = 0 | 
+| movie | 1 | 1 | 1 | $log\frac{3}{3}$ = 0 |
+| is | 1 | 2 | 1 | $log\frac{3}{3}$, $log\frac{3}{3}$  = 0 |
+| very | 1 | 0 | 0 | $log\frac{3}{1}$ = 0.48 |
+| scary | 1 | 1 | 0 | $log\frac{3}{2}$ = 0.18 |
+| and | 1 | 1 | 1 | $log\frac{3}{3}$ = 0|
+| long | 1 | 0 | 0 | $log\frac{3}{1}$ = 0.48|
+| not | 0 | 1 | 0 | $log\frac{3}{1}$ = 0.48|
+| slow | 0 | 1 | 0 | $log\frac{3}{1}$ = 0.48|
+| spooky | 0 | 0 | 1 | $log\frac{3}{1}$ = 0.48|
+| good | 0 | 0 | 1 | $log\frac{3}{1}$ = 0.48|
