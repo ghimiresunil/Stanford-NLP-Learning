@@ -150,4 +150,4 @@ Example:
 
 Let's calculate the IDF value of word `this` in sentence 2.
 
-IDF `this` in sentence 2 = $log\frac{Number\ of\ documents}{Number\ of\ documents\ containing\ the\ word\ `this`} $ = $log\frac{3}{3}$ = log(1) = 0
+IDF `this` in sentence 2 = $log\frac{Number\ of\ documents}{Number\ of\ documents\ containing\ the\ word\ this}$ = $log\frac{3}{3}$ = log(1) = 0
