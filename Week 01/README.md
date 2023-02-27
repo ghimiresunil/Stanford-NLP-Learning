@@ -106,3 +106,27 @@ Term Frequency (TF) - If is a measure of how frequently a term, t appears in a d
 $$t_{f_{t_i}d} = \frac{n_{t_id}}{Number\ of\ terms\ in\ the\ document}$$
 
 Here, in the numerator, n is the number of times the term 't' appears in the document 'd'. Thus, each document and term would have its own TF value.
+
+Let's take an example:
+
+- This movie is very scary and long
+- This movie is not scary and is slow
+- This movie is spooky and good
+
+First we will build a vocabulary from all unique words in above three movie reviews. The vocabulary consists of these 11 words.
+
+Vocabulary: 'This', 'movie, 'is', 'very', 'scary', 'and', 'long', 'not, 'slow', 'spooky', 'good' 
+
+- Number of words in first example: 7
+- Number of words in second example: 8
+- Number of word in third example: 6 
+
+
+Example:
+
+TF of the word `this` in second sentence: = $\frac{number\ of\ times\ this\ appear\ in\ second\ sentence}{number\ of\ terms\ in\ second\ sentence}$ = $\frac{1}{8}$
+
+We can calculate the term frequencies for all terms and all the sentence in the number
+
+| Term | Sentence 1 | Sentence 2 | Sentence 3 | TF Sentence 1 | TF Sentence 2 | TF Sentence 3|
+| ---- | ---| ------- | -------  |-------  | -------  | ------- |
