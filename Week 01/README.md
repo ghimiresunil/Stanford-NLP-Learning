@@ -167,3 +167,8 @@ The IDF Values for the entire vocabulary would be:
 | slow | 0 | 1 | 0 | $log\frac{3}{1}$ = 0.48|
 | spooky | 0 | 0 | 1 | $log\frac{3}{1}$ = 0.48|
 | good | 0 | 0 | 1 | $log\frac{3}{1}$ = 0.48|
+
+
+Hence, we can see that words like `is`, `the`, `and`, etc. are reduced to 0 and have little importance while words like `scary`, `long`, `good`, etc. are the words with more importance and thus have higher value. 
+
+We can now compute the `TF-IDF` score of each word in corpus.
