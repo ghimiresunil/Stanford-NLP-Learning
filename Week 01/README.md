@@ -188,3 +188,16 @@ $TF-IDF_{t,d}$ = $TF_{t,d}$  * $IDF_t$
 | good | 0 | 0 | 1 | 0.48| 0 | 0 | 0.80 | 
 
 After calculating the TF-IDF scores for our vocabulary, it became evident that less frequent words were given higher values, indicating their relative importance in the corpus. TF-IDF scores were found to be particularly high for words that were rare in all documents combined, but frequent in a single document, indicating their potential significance in that particular context.
+
+#### 1.1.2. Problem of Bag of Worrds and TF-IDF
+- Both BOW and TF-IDF approach semntic information is not stored. TF-IDF gives importance to uncommon words
+- There is definately chance of overfitting 
+
+To overcome such problem of BOW and TF-IDF we use technique called Word2Vec.
+
+Word2vec
+
+- In the specific model, each word is basically represented as a vector of 32 or more dimension instead of a single word
+- Here the semantic information and relation between different words is also preserved 
+
+
