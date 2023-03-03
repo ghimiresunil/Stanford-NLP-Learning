@@ -197,7 +197,14 @@ To overcome such problem of BOW and TF-IDF we use technique called Word2Vec.
 
 Word2vec
 
+Word2Vec is a technique for natural language processing published in 2013 by Google. The word2vec algorithm uses a nueral network model to learn word associations from a large corpus of text. Once trained, such a model can detect synonymous words or suggest additional words for a particular sentence. As the name implies, word2vec represents each distinct word with a particular list of numbers called a vector.
+
 - In the specific model, each word is basically represented as a vector of 32 or more dimension instead of a single word
 - Here the semantic information and relation between different words is also preserved 
 
 
+Let's discuss the differences between Bag of Words (BOW), Term Frequency-Inverse Document Frequency (TF-IDF), and Word2Vec. In BOW, we obtain a sparse matrix with either 0 or 1 values, while in TF-IDF, we may get decimal values ranging from 0 to 1. However, Word2Vec works differently. To illustrate this, let's consider a vocabulary comprising the unique words in a given corpus.
+
+Vocabulary -> Unique Words -> Corpus 
+
+Let's say vocabulary word I specifically have like something like BOY GIRL KING QUEEN APPLE MANGO
